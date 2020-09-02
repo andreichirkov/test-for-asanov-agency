@@ -1,0 +1,32 @@
+.subnav
+  display: none
+
+@media (max-width: 576px)
+  .subnav
+    display: flex
+    font-size: 14px
+    &__item
+      display: flex
+      align-items: center
+      height: 48px
+      background-color: #F2F1F3
+      border-radius: 8px
+      margin-bottom: 8px
+      &:hover
+        background-color: #EE2A74
+        color: white
+    &__load
+      border: 1px solid #E6E4E7
+      background-color: white
+      //justify-content: center
+      padding-left: 12px
+      &__title
+        margin-right: -8px
+    &__wrap
+      margin-right: 8px
+      margin-left: 12px
+
+@media (max-width: 375px)
+  .subnav
+    &__load
+      justify-content: center

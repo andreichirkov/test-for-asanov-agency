@@ -1,0 +1,252 @@
+.splide
+  //width: 250px
+  height: 329px
+  //border: 2px solid black
+  position: relative
+  z-index: 1
+
+.splide__track
+  overflow: hidden
+  width: 100%
+  height: 329px
+  //border: 2px dotted green
+  &:hover
+    height: 463px
+
+.splide__list
+  //width: 300px  ????
+  height: 329px
+
+//.splide__slide
+//  //width: 224px
+//  //height: 329px
+//  background: white
+//  opacity: 1
+//  //border: 2px solid red
+//  &:hover
+//    height: 463px
+//    border: 1px solid $main-pink
+
+.products
+  font-size: 12px
+  line-height: 16px
+  z-index: 1000
+  &__heading
+    display: flex
+    align-items: center
+  &__label
+    margin-right: 8px
+    height: 28px
+  &__main
+    padding-top: 39px
+    padding-bottom: 36px
+
+  &__item
+    width: 224px
+    height: 329px
+    margin-right: 4px
+    margin-left: 4px
+    z-index: 1000
+    border: 1px solid #E6E4E7
+    border-radius: 8px
+    background: white
+    opacity: 1
+    &:hover
+      height: 463px
+      border: 1px solid $main-pink
+  &__image
+    img
+      width: 100%
+      border-top-left-radius: 8px
+      border-top-right-radius: 8px
+  &__text
+    padding: 8px
+    font-size: 14px
+    line-height: 24px
+  &__title
+    height: 74px
+
+  &__buy
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__prices-old
+    color: #A2A0A3
+    text-decoration: line-through
+    line-height: 14px
+  &__prices-new
+    font-size: 22px
+    line-height: 22px
+    @extend %bold
+  &__btn
+    width: 85px
+    height: 40px
+    border: 1px solid $main-pink
+    color: $main-pink
+    background-color: transparent
+    border-radius: 8px
+    @extend %bold
+  &__isStock
+    display: flex
+    justify-content: flex-start
+    align-items: center
+  &__isStock-title
+    margin-top: 9px
+    margin-left: 4px
+  &__subtext
+    font-size: 14px
+    line-height: 17px
+    padding-left: 8px
+    padding-right: 8px
+
+  &__mechanism-title,
+  &__sizes-title,
+  &__sleep-title
+    color: #A2A0A3
+    line-height: 15px
+    margin-top: 6px
+  &__mechanism-text,
+  &__sizes-text,
+  &__sleep-text
+    //line-height: 17px
+    margin-top: 3px
+
+
+  .products__items:hover .products__item:not(:hover)
+    //color: red
+    //background-color: #a89cc8
+    .products__isStock
+      margin-bottom: 200px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//.products
+//  &__container
+//  &__heading
+//    display: flex
+//    align-items: center
+//  &__label
+//    margin-right: 8px
+//    height: 28px
+//  &__main
+//    padding-top: 39px
+//    padding-bottom: 36px
+//  &__item
+//    //display: flex
+//    height: 329px
+//    width: 224px
+//    border: 1px solid #E6E4E7
+//    border-radius: 8px
+//
+//    margin-right: 4px
+//    margin-left: 4px
+//  &__image
+//    width: 100%
+//    padding-bottom: 8px
+//    border-top-right-radius: 8px
+//    border-top-left-radius: 8px
+//  &__info
+//    padding: 0 8px
+//    display: flex
+//    flex-direction: column
+//    justify-content: flex-end
+//  &__title
+//    margin-bottom: 36px
+//    font-size: 14px
+//    line-height: 24px
+//  &__bottom
+//    position: relative
+//    bottom: 8px
+//  &__buing
+//    display: flex
+//    justify-content: space-between
+//    align-items: center
+//  &__prices
+//    font-size: 22px
+//    line-height: 24px
+//    color: #1A1A1A
+//    font-family: 'HelveticaBold', sans-serif
+//    font-weight: 700
+//    &__old
+//      color: #A2A0A3
+//      font-size: 12px
+//      line-height: 16px
+//      text-decoration: line-through
+//      font-family: 'HelveticaRegular', sans-serif
+//      font-weight: 400
+//  &__btn
+//    width: 85px
+//    height: 40px
+//    border: 1px solid #EE2A74
+//    border-radius: 8px
+//    background-color: transparent
+//    color: #EE2A74
+//    font-family: 'HelveticaBold', sans-serif
+//    font-weight: 700
+//    &:hover
+//      @extend %active-btn
+//
+//  &__stock
+//    display: flex
+//    align-items: center
+//    margin-top: 10px
+//    &__image
+//      width: 16px
+//      height: 16px
+//      margin-right: 4px
+//    &__items
+//
+//
+//.products__item
+//  position: relative
+//
+//.products__item-hover
+//  background-color: red
+//  border: 1px solid blue
+//  width: 120px
+//  height: 50px
+//  opacity: 1
+//  visibility: hidden
+//  transition: all 0.3s ease
+//  transform: translate3d(0,-100%,0)
+//  z-index: 1
+//
+//
+//.products__item:hover .products__item-hover
+//  opacity: 1
+//  visibility: visible
+//  transform: none
+//
+//.products__info:hover .products__item-hover
+//  opacity: 1
+//  visibility: visible
+//  transform: none
+//
+//
+
+
+
+
+
+
+
+
+
+
+

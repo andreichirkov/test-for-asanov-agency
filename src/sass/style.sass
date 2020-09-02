@@ -1,0 +1,112 @@
+@import "libs/fonts"
+@import "libs/slick"
+$main-color: #1A1A1A
+$main-pink: #EE2A74
+%active-btn
+  background-color: #EE2A74
+  color: white
+  border-color: #EE2A74
+
+
+.wrapper
+  display: flex
+  margin: 0 auto
+  max-width: 1280px
+  color: $main-color
+  //background-color: darkolivegreen
+
+.aside
+  padding: 0 16px
+  width: 280px
+  height: 1000px
+  //background-color: gold
+
+.main
+  //margin: 0 auto
+  //background-color: aliceblue
+  width: 1000px
+  height: 1000px
+  padding: 0 40px
+  //z-index: 100
+
+
+
+
+
+//.into
+//  width: 100%
+.kek
+  margin-left: -4px
+  margin-right: -4px
+
+
+.product
+  position: relative
+  display: inline-block
+  z-index: 10
+  height: 370px
+
+.wrap-product
+  position: relative
+  width: 100px
+  height: 350px
+  background-color: #fff
+  border: 1px solid blue
+  margin: 5px
+  margin-bottom: 0px
+  padding: 10px
+  z-index: -100000
+
+
+.hover-product
+  background-color: red
+  border: 1px solid blue
+  width: 120px
+  height: 50px
+  margin-left: 5px
+  position: absolute
+  opacity: 1
+  visibility: hidden
+  transition: all 0.3s ease
+  transform: translate3d(0,-100%,0)
+  z-index: 1
+
+
+//.product:hover
+//  z-index: 11
+
+.product:hover .hover-product
+  opacity: 1
+  visibility: visible
+  transform: none
+
+
+@import "aside"
+@import "about"
+@import "footer"
+@import "subheader"
+@import "products"
+@import "header"
+@import "subnav"
+@import "aboutMobile"
+@import "try"
+
+
+@import "media"
+
+
+
+
+
+
+
+
+
+ 
+
+
+    
+
+
+
+  

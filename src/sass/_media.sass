@@ -1,0 +1,98 @@
+@media (max-width: 1280px)
+  .aside
+    position: absolute
+    transform: translate(-100%, 56px)
+    background-color: rgba(0, 0, 0, .3 )
+    transition: all 0.5s
+    &-active
+      transform: translate(0%, 56px)
+      z-index: 10
+      background-color: white
+      height: auto
+  .main
+    max-width: 1000px
+    margin: 0 auto
+    
+  .navbar__logo
+    display: none
+  .navbar__items
+    margin-top: 12px
+
+@media (max-width: 992px)
+  .products
+    width: 692px
+    &__title
+      //margin-bottom: 30px !important
+
+
+  .header
+    display: none
+
+  .headerMobile
+    display: flex
+
+  .subheader
+    margin-bottom: 38px
+    &__town
+      display: flex
+      margin: 8px 0
+
+@media (max-width: 768px)
+  .products
+    width: 460px
+    &__main
+      font-size: 30px
+
+  .headerMobile
+    &__right
+      margin-left: 40%
+
+
+@media (max-width: 576px)
+
+  .main
+    padding: 0 16px
+    width: 576px
+
+  .headerMobile
+    justify-content: space-between
+    padding-left: 31px
+    padding-right: 37px
+    &__right
+      margin-left: 0
+
+  //.headerMobile
+  //
+  //  margin: 0 -16px
+  //  padding-left: 16px
+  //  padding-right: 22px  //нужно найти откуда 12px берутся лишние
+
+  .subheader__buttons
+    display: none
+  
+  .products
+    display: none
+
+  //.about
+  //  &__info,
+  //  &__cooperation,
+  //  &__reviews
+  //    margin-top: 1.5rem
+  .about
+    display: none
+
+  .social__items
+    margin-top: 32px
+
+  .footer__down
+    flex-direction: column
+
+  .footer__copy
+    line-height: 16px !important
+    margin-bottom: 32px
+
+@media (max-width: 321px)
+  .main
+    width: 320px
+
+  //find subnav media in subnav.sass
