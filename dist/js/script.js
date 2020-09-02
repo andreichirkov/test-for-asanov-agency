@@ -92,27 +92,31 @@ document.addEventListener( 'DOMContentLoaded', function () {
     }
   }).mount();
 
-  setTimeout(showSlider, 300)
+  // const buyButton = document.querySelector('.products__btn')
+  // buyButton.addEventListener('click', function delButton(e) {
+  //   e.event.parentNode.removeChild(this)
+  // })
+  $('.products__btn').click(function(e) {
+    // console.log(this)
+    // $(this).remove();
+    // console.log(this)
 
-  function showSlider() {
-    const sliderWrap = document.querySelector('.splide__track')
-    console.log(sliderWrap)
-    // sliderWrap.style.height = '529px'
-    // sliderWrap.style.display = 'none'
+    // $('.products__buy').innerHTML(`<div class="toggleBtn">
+    //                     <div class="toggleBtn-minus"></div>
+    //                     <div class="toggleBtn-counter">99</div>
+    //                     <div class="toggleBtn-plus"></div>
+    //                   </div>`)
+    var theDiv = document.createElement('div')
+    theDiv.className = "toggleBtn"
 
-  }
+    theDiv.innerHTML = `<div class="toggleBtn-minus"></div>
+                        <div class="toggleBtn-counter">99</div>
+                        <div class="toggleBtn-plus"></div>
+                        `
 
-  const activeItem = document.querySelector('.products__item')
-  console.log(activeItem)
-
-  activeItem.addEventListener('click', () => {
-
-    const bottomPart = document.querySelector('.products__subtext')
-    console.log(bottomPart)
-    bottomPart.style.display = 'none'
-
-  })
-
+    $(this).parent().append(theDiv)
+    $(this).remove();
+  });
 
 
 });
