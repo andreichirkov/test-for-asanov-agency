@@ -1,44 +1,3 @@
-// $('.carousel__inner').slick({
-//   dots: false,
-//   infinite: true,
-//   speed: 300,
-//   slidesToShow: 4,
-//   slidesToScroll: 1,
-//   prevArrow: '<button type="button" class="slick-prev"><img src="../img/aside/icon/arrow-circle-left.svg"></button>',
-//   nextArrow: '<button type="button" class="slick-next"><img src="../img/aside/icon/arrow-circle-right.svg"></button>',
-//   responsive: [
-//     {
-//       breakpoint: 1025,
-//       settings: {
-//         slidesToShow: 4,
-//         slidesToScroll: 1,
-//       }
-//     },
-//     {
-//       breakpoint: 992,
-//       settings: {
-//         slidesToShow: 3,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 769,
-//       settings: {
-//         slidesToShow: 2,
-//         slidesToScroll: 1
-//       }
-//     },
-//     {
-//       breakpoint: 577,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1
-//       }
-//     }
-//   ]
-// });
-
-
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.aside')
   const menuItem = document.querySelectorAll('.navbar__item')
@@ -92,20 +51,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
     }
   }).mount();
 
-  // const buyButton = document.querySelector('.products__btn')
-  // buyButton.addEventListener('click', function delButton(e) {
-  //   e.event.parentNode.removeChild(this)
-  // })
   $('.products__btn').click(function(e) {
-    // console.log(this)
-    // $(this).remove();
-    // console.log(this)
 
-    // $('.products__buy').innerHTML(`<div class="toggleBtn">
-    //                     <div class="toggleBtn-minus"></div>
-    //                     <div class="toggleBtn-counter">99</div>
-    //                     <div class="toggleBtn-plus"></div>
-    //                   </div>`)
     var theDiv = document.createElement('div')
     theDiv.className = "toggleBtn"
 
